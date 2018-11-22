@@ -1,0 +1,4 @@
+"ServerName","State","CPUModel","CPUCores","CPUNumber","CPUClockSpeed","RAM","HDDSpace","HDDFreeSpace"
+"PowerShellVM03","Offline","N/A","N/A","N/A","N/A",,"N/A","N/A"
+"PowerShellVM02","Online","Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz","2","2","2394","4","127","111.79"
+"PowerShellVM01","Online","Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz","2","2","2394","4","127","111.79"

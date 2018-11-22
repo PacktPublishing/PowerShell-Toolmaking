@@ -1,0 +1,3 @@
+powershellvm01
+powershellvm02
+powershellvm03
