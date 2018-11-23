@@ -1,4 +1,4 @@
-# PowerShell-Toolmaking-Building-PowerShell-Automation-Tools
+# PowerShell-Toolmaking
 This is the code repository for [PowerShell Toolmaking [Video]](https://www.packtpub.com/virtualization-and-cloud/powershell-toolmaking-video), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
 ## About the Video Course
 Routine tasks that you perform on a daily basis takes up all of your time that could be spent designing new solutions rather than maintaining the old ones. PowerShell is a simple and powerful toolset that allows you to automate workloads that were previously handled by large teams.
