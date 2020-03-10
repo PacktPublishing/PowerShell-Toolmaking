@@ -23,7 +23,7 @@ foreach($computer in $computers)
         $serverObject.State = "Online"
         try 
         {
-            $CPU = Get-WmiObject -Class Win32_Processor -ErrorAction Stop | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors,MaxClockSpeed
+            $CPU = Get-WmiObject -Class Win32_Processor -ComputerName $computer -ErrorAction Stop | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors,MaxClockSpeed
             $serverObject.CPUModel = $CPU.Name
             $serverObject.CPUCores = $cpu.NumberOfCores
             $serverObject.CPUClockSpeed = $cpu.MaxClockSpeed
@@ -41,7 +41,7 @@ foreach($computer in $computers)
         
         $serverObject.RAM = [math]::Round($(Get-WmiObject -Class Win32_ComputerSystem).TotalPhysicalMemory/1GB,2)
         
-        $disk = Get-WmiObject Win32_LogicalDisk -Filter "DeviceID='C:'" | Select-Object FreeSpace, Size
+        $disk = Get-WmiObject Win32_LogicalDisk -Filter "DeviceID='C:'" -ComputerName $computer | Select-Object FreeSpace, Size
         
         $serverObject.HDDSpace = [math]::Round($disk.Size/1gb,2)
         $serverObject.HDDFreeSpace = [math]::Round($disk.FreeSpace/1gb,2)
